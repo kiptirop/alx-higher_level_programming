@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Defines a Rectangle based on 3-rectangle.py"""
+"""Defines a Rectangle"""
 
 class Rectangle:
     """Represents a rectangle"""
