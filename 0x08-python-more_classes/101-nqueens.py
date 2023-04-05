@@ -1,6 +1,20 @@
 #!/usr/bin/python3
 
-"""A program that solves the Nqueens problem"""
+"""A program that solves the Nqueens problem
+Determines all possible solutions to placing N
+N non-attacking queens on an NxN chessboard.
+
+If user calls program with wrong no. of args 
+print Usage: nqueens N, exit with the status 1
+
+N must be an integer >= 4
+
+Attributes:
+    board (list): chessboard
+    solutions (list): possible solutions.
+
+"""
+
 
 import sys
 
