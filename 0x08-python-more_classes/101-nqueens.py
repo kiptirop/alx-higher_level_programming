@@ -5,6 +5,7 @@
 import sys
 
 def nqueens(N):
+    """Initializes an n x n sized chessboard"""
     # Check that N is a positive integer greater than or equal to 4
     try:
         N = int(N)
@@ -19,6 +20,7 @@ def nqueens(N):
     
     # Define a helper function to check if a given placement of queens is valid
     def is_valid(board, row, col):
+        """checks the if valid before it returns"""
         # Check the row
         if 1 in board[row]:
             return False
@@ -40,6 +42,7 @@ def nqueens(N):
     
     # Define a recursive function to try all possible placements of queens
     def solve(board, row):
+        """Returns the list representation of a solved chessboard"""
         # If we've placed a queen in every row, we have a solution!
         if row == N:
             for row in board:
