@@ -1,7 +1,7 @@
 @!/usr/bin/python3
 
 """
-Defines a rectangle class
+Defines a class Rectangle
 """
 
 class Rectangle:
@@ -41,10 +41,10 @@ class Rectangle:
 
     def area(self):
         """returns the area of the rectangle"""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """returns the perimeter of the rectangle"""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.width + self.height)
+        return 2 * (self.__width + self.__height)
